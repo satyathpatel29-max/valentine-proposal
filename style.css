@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffebee; /* Soft pastel pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    z-index: 10;
+}
+
+h1 {
+    color: #d81b60;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.hint-text {
+    color: #ad1457;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.btn {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.yes-btn {
+    background-color: #ff4081;
+    color: white;
+}
+
+.yes-btn:hover {
+    background-color: #f50057;
+    transform: scale(1.1);
+}
+
+.no-btn {
+    background-color: #bdbdbd;
+    color: white;
+    position: relative; /* Essential for JS movement */
+}
